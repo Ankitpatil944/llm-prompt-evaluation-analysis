@@ -1,0 +1,269 @@
+{
+  "study_name": "LLM Evaluation Pipeline Study",
+  "num_cases": 3,
+  "num_runs": 12,
+  "results": [
+    {
+      "study_id": "study-001",
+      "domain": "healthcare",
+      "prompt_format": "baseline",
+      "dimension_scores": {
+        "relevance": 3.02,
+        "completeness": 2.87,
+        "clarity": 4.7,
+        "factual_caution": 4.1,
+        "instruction_adherence": 3.07
+      },
+      "weighted_total": 3.49,
+      "verdict": "needs_revision",
+      "notes": [
+        "study-001 in domain 'healthcare' produced an aggregate score of 3.49.",
+        "Strongest dimension: clarity (4.7).",
+        "Weakest dimension: completeness (2.87).",
+        "Baseline framing behaved like a low-control evaluation condition."
+      ]
+    },
+    {
+      "study_id": "study-001",
+      "domain": "healthcare",
+      "prompt_format": "rubric_strict",
+      "dimension_scores": {
+        "relevance": 3.02,
+        "completeness": 3.02,
+        "clarity": 4.9,
+        "factual_caution": 4.1,
+        "instruction_adherence": 3.47
+      },
+      "weighted_total": 3.63,
+      "verdict": "acceptable",
+      "notes": [
+        "study-001 in domain 'healthcare' produced an aggregate score of 3.63.",
+        "Strongest dimension: clarity (4.9).",
+        "Weakest dimension: relevance (3.02).",
+        "Strict rubric framing increased structure and instruction-following pressure."
+      ]
+    },
+    {
+      "study_id": "study-001",
+      "domain": "healthcare",
+      "prompt_format": "comparative",
+      "dimension_scores": {
+        "relevance": 3.22,
+        "completeness": 3.17,
+        "clarity": 4.7,
+        "factual_caution": 4.1,
+        "instruction_adherence": 3.07
+      },
+      "weighted_total": 3.61,
+      "verdict": "acceptable",
+      "notes": [
+        "study-001 in domain 'healthcare' produced an aggregate score of 3.61.",
+        "Strongest dimension: clarity (4.7).",
+        "Weakest dimension: instruction_adherence (3.07).",
+        "Comparative framing favored broader coverage and tradeoff-aware evaluation."
+      ]
+    },
+    {
+      "study_id": "study-001",
+      "domain": "healthcare",
+      "prompt_format": "research_audit",
+      "dimension_scores": {
+        "relevance": 3.12,
+        "completeness": 2.87,
+        "clarity": 4.7,
+        "factual_caution": 4.5,
+        "instruction_adherence": 3.37
+      },
+      "weighted_total": 3.62,
+      "verdict": "acceptable",
+      "notes": [
+        "study-001 in domain 'healthcare' produced an aggregate score of 3.62.",
+        "Strongest dimension: clarity (4.7).",
+        "Weakest dimension: completeness (2.87).",
+        "Audit framing improved caution-sensitive scoring and experiment traceability."
+      ]
+    },
+    {
+      "study_id": "study-002",
+      "domain": "enterprise_policy",
+      "prompt_format": "baseline",
+      "dimension_scores": {
+        "relevance": 4.3,
+        "completeness": 3.91,
+        "clarity": 4.7,
+        "factual_caution": 3.22,
+        "instruction_adherence": 3.91
+      },
+      "weighted_total": 4.06,
+      "verdict": "acceptable",
+      "notes": [
+        "study-002 in domain 'enterprise_policy' produced an aggregate score of 4.06.",
+        "Strongest dimension: clarity (4.7).",
+        "Weakest dimension: factual_caution (3.22).",
+        "Baseline framing behaved like a low-control evaluation condition."
+      ]
+    },
+    {
+      "study_id": "study-002",
+      "domain": "enterprise_policy",
+      "prompt_format": "rubric_strict",
+      "dimension_scores": {
+        "relevance": 4.3,
+        "completeness": 4.06,
+        "clarity": 4.9,
+        "factual_caution": 3.22,
+        "instruction_adherence": 4.31
+      },
+      "weighted_total": 4.2,
+      "verdict": "acceptable",
+      "notes": [
+        "study-002 in domain 'enterprise_policy' produced an aggregate score of 4.2.",
+        "Strongest dimension: clarity (4.9).",
+        "Weakest dimension: factual_caution (3.22).",
+        "Strict rubric framing increased structure and instruction-following pressure."
+      ]
+    },
+    {
+      "study_id": "study-002",
+      "domain": "enterprise_policy",
+      "prompt_format": "comparative",
+      "dimension_scores": {
+        "relevance": 4.5,
+        "completeness": 4.21,
+        "clarity": 4.7,
+        "factual_caution": 3.22,
+        "instruction_adherence": 3.91
+      },
+      "weighted_total": 4.19,
+      "verdict": "acceptable",
+      "notes": [
+        "study-002 in domain 'enterprise_policy' produced an aggregate score of 4.19.",
+        "Strongest dimension: clarity (4.7).",
+        "Weakest dimension: factual_caution (3.22).",
+        "Comparative framing favored broader coverage and tradeoff-aware evaluation."
+      ]
+    },
+    {
+      "study_id": "study-002",
+      "domain": "enterprise_policy",
+      "prompt_format": "research_audit",
+      "dimension_scores": {
+        "relevance": 4.4,
+        "completeness": 3.91,
+        "clarity": 4.7,
+        "factual_caution": 3.62,
+        "instruction_adherence": 4.21
+      },
+      "weighted_total": 4.19,
+      "verdict": "acceptable",
+      "notes": [
+        "study-002 in domain 'enterprise_policy' produced an aggregate score of 4.19.",
+        "Strongest dimension: clarity (4.7).",
+        "Weakest dimension: factual_caution (3.62).",
+        "Audit framing improved caution-sensitive scoring and experiment traceability."
+      ]
+    },
+    {
+      "study_id": "study-003",
+      "domain": "customer_support",
+      "prompt_format": "baseline",
+      "dimension_scores": {
+        "relevance": 3.66,
+        "completeness": 3.39,
+        "clarity": 4.7,
+        "factual_caution": 3.44,
+        "instruction_adherence": 3.49
+      },
+      "weighted_total": 3.74,
+      "verdict": "acceptable",
+      "notes": [
+        "study-003 in domain 'customer_support' produced an aggregate score of 3.74.",
+        "Strongest dimension: clarity (4.7).",
+        "Weakest dimension: completeness (3.39).",
+        "Baseline framing behaved like a low-control evaluation condition."
+      ]
+    },
+    {
+      "study_id": "study-003",
+      "domain": "customer_support",
+      "prompt_format": "rubric_strict",
+      "dimension_scores": {
+        "relevance": 3.66,
+        "completeness": 3.54,
+        "clarity": 4.9,
+        "factual_caution": 3.44,
+        "instruction_adherence": 3.89
+      },
+      "weighted_total": 3.88,
+      "verdict": "acceptable",
+      "notes": [
+        "study-003 in domain 'customer_support' produced an aggregate score of 3.88.",
+        "Strongest dimension: clarity (4.9).",
+        "Weakest dimension: factual_caution (3.44).",
+        "Strict rubric framing increased structure and instruction-following pressure."
+      ]
+    },
+    {
+      "study_id": "study-003",
+      "domain": "customer_support",
+      "prompt_format": "comparative",
+      "dimension_scores": {
+        "relevance": 3.86,
+        "completeness": 3.69,
+        "clarity": 4.7,
+        "factual_caution": 3.44,
+        "instruction_adherence": 3.49
+      },
+      "weighted_total": 3.87,
+      "verdict": "acceptable",
+      "notes": [
+        "study-003 in domain 'customer_support' produced an aggregate score of 3.87.",
+        "Strongest dimension: clarity (4.7).",
+        "Weakest dimension: factual_caution (3.44).",
+        "Comparative framing favored broader coverage and tradeoff-aware evaluation."
+      ]
+    },
+    {
+      "study_id": "study-003",
+      "domain": "customer_support",
+      "prompt_format": "research_audit",
+      "dimension_scores": {
+        "relevance": 3.76,
+        "completeness": 3.39,
+        "clarity": 4.7,
+        "factual_caution": 3.84,
+        "instruction_adherence": 3.79
+      },
+      "weighted_total": 3.87,
+      "verdict": "acceptable",
+      "notes": [
+        "study-003 in domain 'customer_support' produced an aggregate score of 3.87.",
+        "Strongest dimension: clarity (4.7).",
+        "Weakest dimension: completeness (3.39).",
+        "Audit framing improved caution-sensitive scoring and experiment traceability."
+      ]
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "average_weighted_total": 3.76,
+      "best_weighted_total": 4.06,
+      "worst_weighted_total": 3.49
+    },
+    "comparative": {
+      "average_weighted_total": 3.89,
+      "best_weighted_total": 4.19,
+      "worst_weighted_total": 3.61
+    },
+    "research_audit": {
+      "average_weighted_total": 3.89,
+      "best_weighted_total": 4.19,
+      "worst_weighted_total": 3.62
+    },
+    "rubric_strict": {
+      "average_weighted_total": 3.9,
+      "best_weighted_total": 4.2,
+      "worst_weighted_total": 3.63
+    }
+  }
+}
